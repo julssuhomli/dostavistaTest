@@ -1,0 +1,52 @@
+doctype html
+html
+  include head.pug
+  body
+
+  .page
+
+    .page-header
+      p.word_split
+        |Идеальная служба доставки
+      p.word_split
+        |для интернет-магазинов день в день
+
+    .page-subheader
+      p.sub-header.word_split
+        |Закажите пробную доставку <a href="#">через форму на сайте</a> или по телефону +7 495 215 11 69
+      p.sub-header--mobile.word_split
+        |+7 495 215 11
+
+
+    .page-title.word_split Почему Достависта?
+
+    include content.pug
+
+    .page-title.word_split  Как мы работаем?
+
+    .page-footer
+      img(src="img/checkbox.png" class="icon")
+      img(src="img/arrow.png" class="arrow")
+      img(src="img/compass.png" class="icon")
+      img(src="img/arrow.png" class="arrow")
+      img(src="img/mail.png" class="icon")
+      img(src="img/arrow.png" class="arrow")
+      img(src="img/like.png" class="icon")
+
+    .page-description
+
+      .page-description--titem.word_split
+        |Заказ принимается через онлайн-форму заказа круглосуточно |24/7 или по телефону. Обычно курьер назначается и выезжает |к вам в течение 10 минут после получения заявки.
+
+      .page-description--titem.word_split
+        |Вы можете в реальном времени видеть местонахождение курьера в своем личном кабинете. А также можете добавить или удалить адреса из заказа в процессе его выполнения.
+
+      .page-description--titem.word_split
+        |Получателям на каждом из адресов приходит смс с телефоном курьера, а Вам — смс о прохождении курьером каждого адреса.
+
+      .page-description--titem.word_split 
+        |После завершения заказа Вы можете оценить курьера.
+
+  script(src="jquery-3.0.0.min.js")
+  script(src="jquery.lettering-0.6.1.min.js")
+  script(src="dostavista.js")

@@ -1,0 +1,126 @@
+.page
+  width 970px
+  margin 0 auto
+  &-header
+    height 150px
+    background-image: url('img/background.png');
+    background-size: 970px 150px
+    color white
+    display flex
+    flex-flow: column wrap
+    align-items: center;
+    justify-content: center
+    p
+      margin 0
+      font-size: 35px
+  &-subheader
+    p.sub-header
+      color black
+      text-align center
+      font-size 12px
+      background-color rgba(251,201,201,0.5)
+      margin: 0;
+      height: 30px;
+      line-height: 30px
+      a
+        color rgba(251,21,21,1)
+    p.sub-header--mobile
+      display none
+  &-title
+    text-align center
+    padding: 20px 0 20px 0
+  &-item
+    display flex
+    flex-flow row nowrap
+    justify-content: space-around;
+    border-bottom 1px solid grey
+    padding-bottom: 20px
+    margin-bottom: 20px
+    &--question
+      width 250px
+      font-size: 14px
+    &--answer
+      width 550px
+      font-size: 14px
+  &-footer
+    width 970px
+    display flex
+    justify-content: center
+    align-items: center;
+    img.arrow
+      padding 0 50px 0 50px
+  &-description
+    display flex
+    flex-flow row nowrap
+    justify-content: initial
+    margin 20px 0 30px 90px
+    &--titem
+      width: 150px;
+      font-size: 12px;
+      padding-right: 70px;
+
+
+
+
+
+@media (max-width: 350px){
+  .page{
+    width 300px
+  }
+  .page-header{
+    width 300px
+    background-size 300px 150px
+    background-repeat: no-repeat;
+  }
+  .page-header p{
+    font-size: 18px
+  }
+
+  .page-subheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color rgba(251,201,201,0.5)
+  }
+
+  .page-subheader p.sub-header{
+    display none
+  }
+  .page-subheader p.sub-header--mobile{
+    display block
+    font-size 14px
+    color rgba(251,21,21,1)
+  }
+  .page-item{
+    display flex
+    align-items: center
+    flex-flow column wrap
+    border: none
+    margin-bottom: 0
+  }
+  .page-item .page-item--question{
+    padding-bottom 20px
+    border-bottom 1px solid grey
+    text-align: center
+    width 250px
+  }
+  .page-item .page-item--answer{
+    padding 20px 0 20px
+    border-bottom 1px solid grey
+    text-align: center
+    width 250px
+  }
+  .page-footer{
+    width 300px
+    flex-flow: column wrap
+  }
+  img.icon{
+    padding-bottom: 20px
+  }
+  img.arrow{
+    display none
+  }
+  .page-description{
+    display none
+  }
+}
