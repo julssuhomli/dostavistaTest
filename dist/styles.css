@@ -46,6 +46,7 @@
 .page-item--question {
   width: 250px;
   font-size: 14px;
+  font-weight: bold;
 }
 .page-item--answer {
   width: 550px;
